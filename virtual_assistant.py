@@ -33,7 +33,6 @@ def speak(text):
     """
     Speaks the given the text
     """
-    root.config()
     showing_commands.insert(END, f"VU: {text}\n")
     engine.say(text=text)
     engine.runAndWait()
