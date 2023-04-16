@@ -101,7 +101,7 @@ def start_vu():
         query = listening().lower()
         # query = audio_text(query).lower()
 
-        if "remainder" in query or "notification" in query:
+        if "reminder" in query or "notification" in query:
             try:
                 engine.runAndWait()
                 speak("Which remainder do you want to set (Title)?")
